@@ -13,7 +13,7 @@
 ## 🚀 项目演示
 
 [演示地址](http://119.91.225.224:8088/admin)
-![image](https://github.com/KoeyZeng/tp-vue-admin/tree/main/server/public/static/images/demo.jpg)
+![image](https://github.com/KoeyZeng/tp-vue-admin/blob/main/server/public/static/admin/images/demo.jpg?raw=true)
 
 ## 📦 安装
 
