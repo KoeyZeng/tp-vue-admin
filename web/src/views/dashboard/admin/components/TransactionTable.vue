@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import transactionList from './transactionList.js'
 
 export default {
   filters: {
@@ -37,7 +38,7 @@ export default {
   },
   data() {
     return {
-      list: null
+      list: transactionList.list
     }
   },
   created() {
@@ -45,6 +46,7 @@ export default {
   },
   methods: {
     fetchData() {
+      console.log(this.list)
     }
   }
 }

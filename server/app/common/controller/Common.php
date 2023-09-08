@@ -67,6 +67,11 @@ class Common extends BaseController
             // 判断用户是否有权限访问事件
 //            $this->checkRole();
         }
+        // 设置该事件不执行
+        if (strpos($this->action,'save') !== false || strpos($this->action,'del') !== false)
+        {
+            throw new BaseException([10000,'对不起，你无法操作该事件！']);
+        }
     }
 
     /**

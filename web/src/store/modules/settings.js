@@ -1,7 +1,15 @@
-import variables from '@/styles/element-variables.scss'
-import defaultSettings from '@/settings'
+import variables from "@/styles/element-variables.scss";
+import defaultSettings from "@/settings";
 
-const { showSettings, tagsView, fixedHeader, sidebarLogo, paginationLimit, title } = defaultSettings
+const {
+  showSettings,
+  tagsView,
+  fixedHeader,
+  sidebarLogo,
+  paginationLimit,
+  title,
+  company,
+} = defaultSettings;
 
 const state = {
   theme: variables.theme,
@@ -10,28 +18,28 @@ const state = {
   fixedHeader: fixedHeader,
   sidebarLogo: sidebarLogo,
   paginationLimit: paginationLimit,
-  title: title
-}
+  title: title,
+  company: company,
+};
 
 const mutations = {
   CHANGE_SETTING: (state, { key, value }) => {
     // eslint-disable-next-line no-prototype-builtins
     if (state.hasOwnProperty(key)) {
-      state[key] = value
+      state[key] = value;
     }
-  }
-}
+  },
+};
 
 const actions = {
   changeSetting({ commit }, data) {
-    commit('CHANGE_SETTING', data)
-  }
-}
+    commit("CHANGE_SETTING", data);
+  },
+};
 
 export default {
   namespaced: true,
   state,
   mutations,
-  actions
-}
-
+  actions,
+};

@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="footer">
-      <span>xxx有限公司 © 2023</span>
+      <span>{{ company }}有限公司 © 2023</span>
     </div>
   </div>
 </template>
@@ -81,6 +81,7 @@ export default {
         password: [{ required: true, trigger: 'change', validator: validatePassword }]
       },
       title: this.$store.state.settings.title,
+      company : this.$store.state.settings.company,
       passwordType: 'password',
       capsTooltip: false,
       loading: false,

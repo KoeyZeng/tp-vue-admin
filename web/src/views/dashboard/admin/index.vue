@@ -27,6 +27,9 @@
     </el-row>
 
     <el-row :gutter="8">
+      <el-col :xs="{span: 24}" :sm="{span: 24}" :md="{span: 24}" :lg="{span: 12}" :xl="{span: 12}" style="padding-right:8px;margin-bottom:30px;">
+        <transaction-table />
+      </el-col>
       <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
         <todo-list />
       </el-col>
@@ -44,7 +47,7 @@ import LineChart from './components/LineChart'
 import RaddarChart from './components/RaddarChart'
 import PieChart from './components/PieChart'
 import BarChart from './components/BarChart'
-// import TransactionTable from './components/TransactionTable'
+import TransactionTable from './components/TransactionTable'
 import TodoList from './components/TodoList'
 import BoxCard from './components/BoxCard'
 
@@ -76,6 +79,7 @@ export default {
     RaddarChart,
     PieChart,
     BarChart,
+    TransactionTable,
     TodoList,
     BoxCard
   },

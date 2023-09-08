@@ -1,5 +1,6 @@
 module.exports = {
-  title: "XX系统平台",
+  company: "易初科技",
+  title: "易初系统平台",
 
   /**
    * @type {boolean} true | false
